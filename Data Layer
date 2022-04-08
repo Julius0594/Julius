@@ -1,0 +1,32 @@
+<script>
+var dataLayer = window.dataLayer || [];
+dataLayer.push({
+‘event’: ‘transaction’,
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+        'order number': '9522',            // Transaction ID. Required for purchases and refunds.
+        'revenue': '749',                     // Total transaction value (incl. tax and shipping)
+        'tax': '80.16',
+      },
+      'products': [{                            // List of productFieldObjects.
+        'name': 'Frysta Signalkräftor',     // Name or ID is required.
+        'id': '864',
+        'price': '349',
+        'category': 'Skaldjur',
+        'variant': '1 kg',
+        'quantity': 1,
+        'coupon': ''                            // Optional fields may be omitted or set to empty string.
+       },
+       {
+        'name': 'Havskräftor standard',
+        'id': '799',
+        'price': '799',
+        'category': 'Skaldjur',
+        'variant': '0.5 kg',
+        'quantity': 1
+       }]
+    }
+  }
+});
+</script>
